@@ -31,12 +31,12 @@
     "@bahoque/client-service-core": "file:../../client-service-core/source",
     "@feathersjs/feathers": "^4.5.11",
     "lodash": "^4.17.20",
-    "rxjs": "^6.6.3",
-    "typescript": "^4.1.5"
+    "rxjs": "^6.6.3"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.168",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "typescript": "^4.1.5"
   }
 }
