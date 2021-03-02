@@ -1,3 +1,3 @@
-# react-js-service-client
+# client-service-feathers
 
-Librería para manejar API de micro servicios (de momento solo feathersjs).
+Librería para manejar API de micro servicios.

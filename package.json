@@ -28,10 +28,10 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@bahoque/client-service-core": "file:../../client-service-core/source",
+    "@bahoque/client-service-core": "^1.0.3",
     "@feathersjs/feathers": "^4.5.11",
     "lodash": "^4.17.20",
-    "rxjs": "^6.6.3"
+    "rxjs": "^6.6.6"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.168",

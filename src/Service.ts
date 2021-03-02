@@ -1,9 +1,9 @@
 import { Application as FApplication, Service as FService } from "@feathersjs/feathers";
+import { Service as ServiceCore, TService } from "@bahoque/client-service-core";
 import { from, Observable } from "rxjs";
-import { Service as CService } from "@bahoque/client-service-core";
 
-export class Service<T1 = any> extends CService<T1> {
-	protected readonly _service: FService<T1>;
+export class Service<T = any> extends ServiceCore<T> {
+	protected readonly _service: FService<T>;
 	protected readonly _serviceName: string;
 
 	protected static _client: FApplication | undefined;
@@ -43,7 +43,7 @@ export class Service<T1 = any> extends CService<T1> {
 	 * class methods
 	 */
 
-	raw<T>(method: keyof FService<T>, ...rest: any): Observable<T> {
+	raw<T>(method: keyof FService<any>, ...rest: any): Observable<T> {
 		const request: Promise<T> = this._service[method](...rest);
 		return from(request);
 	}
