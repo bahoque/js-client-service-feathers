@@ -30,12 +30,9 @@
   },
   "dependencies": {
     "@bahoque/client-service-core": "^1.0.3",
-    "@feathersjs/authentication-client": "^4.5.11",
     "@feathersjs/feathers": "^4.5.11",
-    "@feathersjs/socketio-client": "^4.5.11",
     "lodash": "^4.17.20",
     "rxjs": "^6.6.6",
-    "socket.io-client": "^3.1.2"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.168",
