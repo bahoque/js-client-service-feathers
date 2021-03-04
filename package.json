@@ -4,7 +4,8 @@
   "description": "Librería para manejar API de micro servicios (de momento solo feathersjs)",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mocha:start": "mocha test/ --recursive --exit"
   },
   "repository": {
     "type": "git",
@@ -29,13 +30,17 @@
   },
   "dependencies": {
     "@bahoque/client-service-core": "^1.0.3",
+    "@feathersjs/authentication-client": "^4.5.11",
     "@feathersjs/feathers": "^4.5.11",
+    "@feathersjs/socketio-client": "^4.5.11",
     "lodash": "^4.17.20",
-    "rxjs": "^6.6.6"
+    "rxjs": "^6.6.6",
+    "socket.io-client": "^3.1.2"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.168",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "mocha": "^8.3.0",
     "prettier": "2.2.1",
     "typescript": "^4.1.5"
   }

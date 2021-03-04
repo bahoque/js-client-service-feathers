@@ -1,5 +1,5 @@
 import { Application as FApplication, Service as FService } from "@feathersjs/feathers";
-import { Service as ServiceCore, TService } from "@bahoque/client-service-core";
+import { Service as ServiceCore } from "@bahoque/client-service-core";
 import { from, Observable } from "rxjs";
 
 export class Service<T = any> extends ServiceCore<T> {
